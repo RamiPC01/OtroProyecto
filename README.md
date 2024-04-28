@@ -1,8 +1,73 @@
-
 # Este es mi archivo README inicial
-## Esto son algunos ejemplos de niveles de encabezados
-### Encabezado Nivel 3
-#### Encabezado nivel 4
+## Propósito de los archivos README
+
+Los archivos README son los encargados de contener toda la información que el autor o autores del proyecto de software que consideren necesarias. Generalmente contienen los objetivos del proyecto, instrucciones de instalación del software, su uso, propósitos etc... Aporta información además sobre los requisitos del sistema, la estructura o simplemente documentación adicional para los desarrolladores interesados en trabajar con el proyecto o simplemente colaborar con él. En conclusión, esta clase de archivos es de gran importancia para dar información relevante a las personas ajenas al proyecto que quieran saber sobre él. En este caso nuestro archivo README será un recopilatorio de ejemplo de la Sintaxis Básica y Avanzada de GIT, para aprender y familiarizarnos con esta clase de sintaxis de los archivos de tipo .md.
+
+### Índice del README
+
+1. [Sintaxis Básica](#sintaxis-básica)
+   
+  - [Encabezados](#encabezados)
+
+  - [Estilo de texto](#estilo-de-texto)
+
+  - [Citado de texto](#citado-de-texto)
+  
+  - [Código de cita](#código-de-cita)
+  
+  - [Modelos de color compatibles](#modelos-de-color-compatibles)
+  
+  - [Vínculos](#vínculos)
+  
+  - [Enlaces de sección](#enlaces-de-sección)
+  
+  - [Vínculos relativos](#vínculos-relativos)
+  
+  - [Imágenes](#imágenes)
+    -[Especificar un tema en el que se muestra una imágen](#especificar-un-tema-en-el-que-se-muestra-una-imágen) 
+
+  - [Listas](#listas)
+    - [Listas anidadas](listas-anidadas)
+      
+  - [Listas de tareas](listas-de-tareas)
+  
+  - [Mencionar personas y equipos](#mencionar-personas-y-equipos)
+  
+  - [Hacer referencia a propuestas y solicitudes de extracción](#hacer-referencia-a-propuestas-y-solicitudes-de-extracción)
+  
+  - [Hacer referencia a recursos externos](#hacer-referencia-a-recursos-externos)
+  
+  - [Cargar activos](#cargar-activos)
+  
+  - [Usar emojis](#usar-emojis)
+  
+  - [Párrafos](#párrafos)
+  
+  - [Notas al pie](#notas-al-pie)
+  
+  - [Alertas](#alertas)
+  
+  - [Ocultar el contenido con comentarios](#ocultar-el-contenido-con-comentarios)
+  
+  - [Ignorar formato de Markdown](#ignorar-formato-de-markdown)
+  
+  - [Inhabilitar la representación del lenguaje de marcado](#inhabilitar-la-representación-del-lenguaje-de-marcado)
+
+
+
+# Sintaxis Básica
+
+## Encabezados
+
+Para poner encabezados en los archivos README hay que poner entre 1 y 6 #, dependiendo del número que pongamos se harán encabezados de los diferentes niveles.
+
+# Encabezado 1
+## Encabezado 2
+### Encabezado 3
+#### Encabezado 4
+
+
+
 
 **Este texto está en negrita**
 
