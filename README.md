@@ -54,6 +54,27 @@ Los archivos README son los encargados de contener toda la información que el a
   
   - [Inhabilitar la representación del lenguaje de marcado](#inhabilitar-la-representación-del-lenguaje-de-marcado)
 
+2. [Sintaxis Avanzada](#sintaxis-avanzada)
+
+  - [Organizar la información en tablas](#organizar-la-información-en-tablas)
+     - [Creación de una tabla](#creación-de-una-tabla)
+     - [Formatear el texto dentro de las tablas](#formatear-el-texto-dentro-de-las-tablas)
+
+  - [Organización de la información en secciones](#organización-de-la-información-en-secciones)
+     - [Creación de una sección contraída](#creación-de-una-sección-contraída)
+    
+  - [Crear Bloques de Código](#Crear-Bloques-de-Código)
+     - [Bloques de código delimitados](#Bloques-de-código-delimitados)
+       
+  - [Crear diagramas](#crear-diagramas)
+     - [Crear diagramas en Sintaxis Mermaid](#Crear-diagramas-en-Sintaxis-Mermaid)
+       
+  - [Expresiones matemáticas](#Expresiones-matemáticas)
+     - [Escritura de expresiones insertadas](#escritura-de-expresiones-insertadas)
+     - [Escritura de expresiones en bloque](#escritura-de-expresiones-en-bloque)
+       
+  - [Archivos Adjuntos](#archivos-adjuntos)
+
 -------------------
 
 # Sintaxis Básica
@@ -208,6 +229,9 @@ Versión preliminar: `JIRA-123` se convierte en `https://jira.example.com/issue?
 
 Se pueden adjuntar archivos en nuestros documentos de Git tanto arrastrando desde el explorador de archivos hasta el documento el la web, como copiando y pegando este mismo. Se puede realizar en incidencias, solicitudes de incorporacion de cambios, comentarios y arquivos `.md` en el repositorio.
 
+Ejemplo arrastrando la imagen:
+![zeropoint_logo](https://github.com/RamiPC01/OtroProyecto/assets/166494114/0bd8f522-84b9-4aa6-a48a-3def486fae7c)
+
 ## Usar emojis
 
 Podemos utilizar emojis `:EMOJICODE:`, entre `:`, algunos ejemplos son:
@@ -216,7 +240,11 @@ Podemos utilizar emojis `:EMOJICODE:`, entre `:`, algunos ejemplos son:
 - Emoji de Gusano `:bug:`: :bug:
 - Emoji de Escarabajo `:beetle:`: :beetle:
 - Emoji Pulgar hacia Arriba `:thumbsup:`: :thumbsup:
-- Emoji Pulgar hacia Abajo `:thumbdown:`: :thumbdown:
+- Emoji Pulgar hacia Abajo `:thumbsdown:`: :thumbsdown:
+
+Esta es una frase de prueba :smiley: para probar :rage: la integración de emojis :mega: entre textos :clipboard: en GitHub. 
+
+:cat: + :octopus: = :octocat:
 
 ## Párrafos
 
@@ -280,7 +308,173 @@ Cuando realizamos la previsualización de documentos este tipo de lenguaje está
 
 -------------------
 
+# Sintaxe de formato avanzada
+
+## Organizar la información en tablas
+
+En GitHub se permite la creación de tablas para organizar adecuadamente nuestra información en estas. Su creación tiene una sintaxis especial que explicaremos a continuación
+
+### Creación de una tabla
+
+Para la creación de tablas utilizaremos los caracteres `|`, que pondremos al principio y al final de cada linea, para la separación de las columnas e guións `-`, deberá haber por lo menos tres guiones para la creación de esta, y los utlizaremos para la creación de las columnas. Sin embargo las celdas no estarán alineadas con el texto que pongamos en su interior, por lo que en el apartado siguiente enseñaremos como formatearlas.
+
+|**Ciclos de Informática**|**Centros de Estudio**|
+|-------------------------|----------------------|
+|*Desarrollo de Aplicaciones Multiplataforma*| IES Leliadoura|
+|*Desarrollo de Aplicaciones Web*| IES San Clemente|
+|*Adeministración de Sistemas en Rede*| IES Leliadoura|
+
+### Formatear el texto dentro de las tablas
+
+Podemos insertar diferentes tipos de formato de texto dentro de nuetras tablas, así como otros tipos de textos. Para alinear el texto debemos poner el caracter de `:` al principio y final de cada fila de guiones donde indicamos la creación de columnas para indicar que se formatee y alinee el texto.
+
+|**Ciclos de Informática**|**Centros de Estudio**|**Tipo de Matrícula**|
+|:-------------------------|----------------------:|:---:|
+|*Desarrollo de Aplicaciones Multiplataforma*| IES Leliadoura|Ordinario|
+|*Desarrollo de Aplicaciones Web*| IES San Clemente|Dual|
+|*Adeministración de Sistemas en Rede*| IES Leliadoura|Modular|
+
+## Organización de la información en secciones
+
+### Creación de una sección contraída
+
+Podemos ocultar contidos temporalmente mediante secións contraídas que podemos expandir. Calquera contido dentro dun bloque `<details></details>` estará contraído ata desplegalo. Dentro do bloque `<details>` empregamos a etiqueta `<sumary></sumary>` para resaltar o texto que queremos empregar para desplegar o contido oculto de forma predeterminada.
+
+<details>
+  
+<summary>Lenguaje UML</summary>
 
 
+El lenguaje unificado de modelado (UML, por sus siglas en inglés, Unified Modeling Language) es el lenguaje de modelado de sistemas de software más conocido y utilizado en la actualidad, respaldado por el Object Management Group (OMG).
 
+Es un lenguaje gráfico para visualizar, especificar, construir y documentar un sistema. UML ofrece un estándar para describir un "plano" del sistema (modelo), incluyendo aspectos conceptuales tales como procesos, funciones del sistema, y aspectos concretos como expresiones de lenguajes de programación, esquemas de bases de datos y compuestos reciclados.
+
+Es importante remarcar que UML es un "lenguaje de modelado" para especificar o describir métodos o procesos. Se utiliza para definir un sistema, para detallar los artefactos en el sistema y para documentar y construirlo. En otras palabras, es el lenguaje en el que está descrito el modelo.
+
+Se puede aplicar en el desarrollo de software, gran variedad de metodologías de desarrollo de software (tal como el Proceso Unificado Racional, Rational Unified Process o RUP), pero no especifica en sí mismo qué metodología o proceso usar.
+
+UML no puede compararse con la programación estructurada, pues UML significa Lenguaje Unificado de Modelado, no es programación, solo se diagrama la realidad de una utilización en un requerimiento. Mientras que la programación estructurada es una forma de programar como lo es la programación orientada a objetos (POO), la POO ha sido un complemento perfecto de UML, pero no por eso se utiliza UML solo para lenguajes orientados a objetos.
+
+  
+</details>
+
+## Crear Bloques de Código
+
+### Bloques de código delimitados
+
+Se crean igual que las citas de texto utilizando las comillas triples ```, hay que dejar una linea en blanco al principio y final del código. 
+
+Además de eso, podemos especificar el lenguaje de programación utilizado en nuestros bloques de código, por lo que la sintaxis se resaltará según el código que estemos utilizando, en este caso Python y Java.
+
+**Ejemplo en Python:**
+```python
+print("¡Hola, Mundo!")
+```
+
+**Ejemplo en Java:**
+```java
+public void copia(Fichero fDestino) {
+		FileReader fe = null;
+		FileWriter fs = null;
+		int caracter;
+
+		try {
+			fe = new FileReader(archivo);
+			fs = new FileWriter(fDestino.archivo);
+			while ((caracter = fe.read()) != -1)
+				fs.write(caracter);
+		} catch (IOException e) {
+			System.out.println("Error: " + e.toString());
+
+		} finally {
+			try {
+				if (fe != null)
+					fe.close();
+				if (fs != null)
+					fs.close();
+			} catch (IOException e) {
+				System.out.println("Error: " + e.toString());
+			}
+		}
+	}
+```
+## Crear diagramas
+
+Hay diferentes tipos de diagramas con sus diferentes sintaxis, Git en este caso en los archivos .md admite: Mermaid, geoJSON e topoJSON, e STL ASCII. La representación de los diagramas se podrá ver en propuestas, discusiones, entre otras. A continuación crearemos un ejemplo de un diagrama en Mermaid.
+
+### Crear diagramas en Sintaxis Mermaid
+
+La sintaxis Mermaid puede representar diferentes tipos de diagramas, como por ejemplo de flujo, circulares, secuanciales. Para crear diagramas mermaid, como en el apartado anterior debemos almacenar el código en bloques delimitados por comillas triples pero especificando el lenguaje contenido en ellos como `mermaid` y la primera linea del bloque debe empezar con la línea: `graph TD;`, cada línea acabada en `;`.
+
+Podemos hacer diagramas de flujo especificando a dónde debe apuntar cada elemento con los caracteres `-->`. En este caso :
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+Para hacer un diagrama de árbol con elementos padres e hijos podemos crear una estructura como esta, especificando los padres con `A` y los hijos con `B` y así sucesivamente al principio de cada elemento encerrado en `()`:
+
+```mermaid
+graph TD;
+    A[Lenguajes de Programación] --> B(Programación Orientada a Objetos);
+    B --> C(Java);
+    B --> D(C);
+    B --> E(C#);
+    B --> F(C++);
+    B --> G(Perl);
+    B --> H(Ruby);
+```
+
+## Expresiones matemáticas
+
+La representación de expresiones matemáticas en GitHub utiliza el motor de visualización MathJax, programado en JavaScript. La visualización de estas expresiones estará disponible en las issues, discusiones de GitHub, wikis, Markdows, etc...
+
+### Escritura de expresiones insertadas
+
+Tenemos dos maneras de insertar expresiones matemáticas encerrando la expresión con el carácter `$`, o hacerlo igual pero añadiendo la comilla simple justo despúes del primer `$` y antes que el último.
+
+- Expresión matemática de la ecuación de segundo grado utilizando `$`: $\sqrt{a+b}+(a+b)^2$
+
+- Ecuación de segundo grado utilizando `$` y las comillas simples: $`\sqrt{a+b}+(a+b)^2`$
+
+### Escritura de expresiones en bloque
+
+Para agregar unha expresión matemática en bloque, la podemos delimitar con las comillas triples o con el caracter de doble `$$`.
+
+**The Cauchy-Schwarz Inequality**
+
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
+
+## Archivos Adjuntos
+
+Como hicimos anteriormente podemos adjuntar archivos simplemente arrastrándolos de nuestro equipo al documento directamente, o pulsando el botón de subir/adjuntar para añadirlo.
+
+Cuando se sube un archivo a GitHub, este se sube a la página, y muestra en el código un enlace anónimo con su ruta. 
+
+1. Algunas especificaciones para los archivos son:
+   
+- 10MB para GIFs y imágenes.
+- 10MB para vídeos que se suban a un repositorio de un usuario o una organización con un plan gratuito de GitHub.
+- 100MB para vídeos que se suban a un repositorio con planes de pago de GitHub.
+- 25MB para los demás.
+
+2. Los formatos compatibles son:
+   
+- PNG(.png)
+- GIF(.gif)
+- JPEG(.jpeg)
+- SVG(.svg)
+- Arquivos de rexistro(.log)
+- Arquivos de Markdown(.md)
+- Documentos de Microsoft Word(.docx), PowerPoint(.pptx) e Excel(.xlsx)
+- Arquivos de texto(.txt)
+- Arquivos de revisión(.patch)
+- PDFs(.pdf)
+- ZIP(.zip, .gz, .tgz)
+- Vídeo(.mp4, .mov, .webm)
 
